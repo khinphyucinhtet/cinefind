@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CineFind | Settings</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="module" src="js/settings.js" defer></script>
+  </head>
+  <body class="app-page">
+    <div class="app-shell app-shell-home">
+      <header class="page-header">
+        <a href="menu.html" class="back-btn" aria-label="Back to menu">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M14.5 5L7.5 12L14.5 19"></path>
+            <path d="M8 12H20"></path>
+          </svg>
+        </a>
+        <h1 class="page-title">Settings</h1>
+        <span></span>
+      </header>
+
+      <main class="app-body app-body-scroll">
+        <section class="settings-card">
+          <div class="setting-row">
+            <div class="setting-copy">
+              <h3>Allow Notifications</h3>
+              <p>Receive movie updates and alerts</p>
+            </div>
+            <button type="button" class="toggle-switch" data-setting-key="cinefind_allow_notifications" aria-label="Allow notifications"></button>
+          </div>
+
+          <div class="setting-row">
+            <div class="setting-copy">
+              <h3>Auto Search Suggestions</h3>
+              <p>Show movie suggestions while typing</p>
+            </div>
+            <button type="button" class="toggle-switch" data-setting-key="cinefind_auto_suggestions" aria-label="Auto search suggestions"></button>
+          </div>
+
+          <div class="setting-row">
+            <div class="setting-copy">
+              <h3>Poster Animation</h3>
+              <p>Enable smooth poster hover effects</p>
+            </div>
+            <button type="button" class="toggle-switch" data-setting-key="cinefind_poster_animation" aria-label="Poster animation"></button>
+          </div>
+        </section>
+      </main>
+
+      <nav class="bottom-nav" aria-label="Bottom navigation">
+        <a href="home.html" class="nav-item">
+          <span class="nav-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 10.5L12 4L20 10.5"></path>
+              <path d="M6.5 9.5V20H17.5V9.5"></path>
+            </svg>
+          </span>
+          <span>Home</span>
+        </a>
+        <a href="trending.html" class="nav-item">
+          <span class="nav-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M13 3C13 6.8 15.2 8.9 18.8 9C18.1 15 14 19 9 19C5.7 19 3 16.3 3 13C3 9.1 6.1 6 10 6C11 6 12 6.2 13 6.7"></path>
+            </svg>
+          </span>
+          <span>Trending</span>
+        </a>
+        <a href="watchlist.html" class="nav-item">
+          <span class="nav-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M7 4.5H17C17.6 4.5 18 4.9 18 5.5V20L12 16L6 20V5.5C6 4.9 6.4 4.5 7 4.5Z"></path>
+            </svg>
+          </span>
+          <span>Watchlist</span>
+        </a>
+        <a href="menu.html" class="nav-item active">
+          <span class="nav-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 7H20"></path>
+              <path d="M4 12H20"></path>
+              <path d="M4 17H20"></path>
+            </svg>
+          </span>
+          <span>Menu</span>
+        </a>
+      </nav>
+    </div>
+  </body>
+</html>

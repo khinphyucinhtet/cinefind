@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CineFind | Home</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="module" src="js/app.js" defer></script>
+  </head>
+  <body class="app-page home-page">
+    <div class="app-shell app-shell-home">
+      <header class="app-header">
+        <a href="menu.html" class="header-icon-btn" aria-label="Open menu">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 7H20"></path>
+            <path d="M4 12H20"></path>
+            <path d="M4 17H20"></path>
+          </svg>
+        </a>
+        <h1 class="brand-title">CINE<span>FIND</span></h1>
+        <a href="profile.html" class="header-icon-btn profile-header-btn" aria-label="Open profile">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="8" r="3.5"></circle>
+            <path d="M5.5 19.5C6.9 16.8 9.1 15.5 12 15.5C14.9 15.5 17.1 16.8 18.5 19.5"></path>
+          </svg>
+        </a>
+      </header>
+
+      <main class="app-body app-body-scroll home-body">
+        <section class="search-hero">
+          <form class="search-form" data-search-form>
+            <label class="sr-only" for="movie-search">Search for movies</label>
+            <div class="search-box">
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="search-icon">
+                <circle cx="11" cy="11" r="6"></circle>
+                <path d="M16 16L21 21"></path>
+              </svg>
+              <input
+                id="movie-search"
+                class="search-input"
+                type="text"
+                placeholder="Search for movies"
+                autocomplete="off"
+                data-search-input
+              />
+              <button class="search-button" type="submit">Search</button>
+            </div>
+          </form>
+
+          <div class="browse-tags" data-browse-tags></div>
+        </section>
+
+        <section class="results-panel search-results-panel">
+          <div class="results-heading">
+            <div>
+              <p class="eyebrow">Results</p>
+              <h2 class="results-title" data-section-title>Movie Search</h2>
+            </div>
+            <p class="results-count" data-result-count></p>
+          </div>
+
+          <div class="feedback-box is-empty" data-feedback>
+            <div class="feedback-icon">+</div>
+            <h3>Search your favourite movie</h3>
+            <p>Type a movie title or choose one of the glowing shortcuts above to begin.</p>
+          </div>
+
+          <div class="movie-grid" data-results-grid aria-live="polite"></div>
+        </section>
+
+        <section class="featured-sections" data-featured-sections></section>
+      </main>
+
+      <nav class="bottom-nav" aria-label="Bottom navigation">
+        <a href="home.html" class="nav-item active">
+          <span class="nav-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 10.5L12 4L20 10.5"></path>
+              <path d="M6.5 9.5V20H17.5V9.5"></path>
+            </svg>
+          </span>
+          <span>Home</span>
+        </a>
+        <a href="trending.html" class="nav-item">
+          <span class="nav-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M13 3C13 6.8 15.2 8.9 18.8 9C18.1 15 14 19 9 19C5.7 19 3 16.3 3 13C3 9.1 6.1 6 10 6C11 6 12 6.2 13 6.7"></path>
+            </svg>
+          </span>
+          <span>Trending</span>
+        </a>
+        <a href="watchlist.html" class="nav-item">
+          <span class="nav-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M7 4.5H17C17.6 4.5 18 4.9 18 5.5V20L12 16L6 20V5.5C6 4.9 6.4 4.5 7 4.5Z"></path>
+            </svg>
+          </span>
+          <span>Watchlist</span>
+        </a>
+        <a href="menu.html" class="nav-item">
+          <span class="nav-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 7H20"></path>
+              <path d="M4 12H20"></path>
+              <path d="M4 17H20"></path>
+            </svg>
+          </span>
+          <span>Menu</span>
+        </a>
+      </nav>
+    </div>
+  </body>
+</html>

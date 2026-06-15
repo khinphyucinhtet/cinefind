@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CineFind | Language</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="module" src="js/language.js" defer></script>
+  </head>
+  <body class="app-page">
+    <div class="app-shell app-shell-home">
+      <header class="page-header">
+        <a href="menu.html" class="back-btn" aria-label="Back to menu">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M14.5 5L7.5 12L14.5 19"></path>
+            <path d="M8 12H20"></path>
+          </svg>
+        </a>
+        <h1 class="page-title">Language</h1>
+        <span></span>
+      </header>
+
+      <main class="app-body app-body-scroll">
+        <section class="language-list">
+          <button type="button" class="language-option" data-language="English">
+            <span class="language-option-label">English</span>
+            <span class="language-check"></span>
+          </button>
+          <button type="button" class="language-option" data-language="Malay">
+            <span class="language-option-label">Malay</span>
+            <span class="language-check"></span>
+          </button>
+          <button type="button" class="language-option" data-language="Chinese">
+            <span class="language-option-label">Chinese</span>
+            <span class="language-check"></span>
+          </button>
+        </section>
+
+        <div class="success-message" data-language-success>
+          <span class="message-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="9"></circle>
+              <path d="M8 12.5L10.8 15.2L16 9.8"></path>
+            </svg>
+          </span>
+          <span>Language preference saved</span>
+        </div>
+      </main>
+
+      <nav class="bottom-nav" aria-label="Bottom navigation">
+        <a href="home.html" class="nav-item">
+          <span class="nav-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 10.5L12 4L20 10.5"></path>
+              <path d="M6.5 9.5V20H17.5V9.5"></path>
+            </svg>
+          </span>
+          <span>Home</span>
+        </a>
+        <a href="trending.html" class="nav-item">
+          <span class="nav-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M13 3C13 6.8 15.2 8.9 18.8 9C18.1 15 14 19 9 19C5.7 19 3 16.3 3 13C3 9.1 6.1 6 10 6C11 6 12 6.2 13 6.7"></path>
+            </svg>
+          </span>
+          <span>Trending</span>
+        </a>
+        <a href="watchlist.html" class="nav-item">
+          <span class="nav-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M7 4.5H17C17.6 4.5 18 4.9 18 5.5V20L12 16L6 20V5.5C6 4.9 6.4 4.5 7 4.5Z"></path>
+            </svg>
+          </span>
+          <span>Watchlist</span>
+        </a>
+        <a href="menu.html" class="nav-item active">
+          <span class="nav-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 7H20"></path>
+              <path d="M4 12H20"></path>
+              <path d="M4 17H20"></path>
+            </svg>
+          </span>
+          <span>Menu</span>
+        </a>
+      </nav>
+    </div>
+  </body>
+</html>
