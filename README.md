@@ -9,7 +9,7 @@ This project is for personal use, learning, exploring, and testing the OMDb API 
 ## Links
 
 - GitHub repository: [https://github.com/khinphyucinhtet/cinefind](https://github.com/khinphyucinhtet/cinefind)
-- Vercel deploy page: [https://vercel.com/new](https://vercel.com/new)
+- Vercel deploy page: https://cinefind-phi.vercel.app/splash.html
 - Live Vercel link: Add your Vercel app URL here after deployment.
 
 ## Project Summary
